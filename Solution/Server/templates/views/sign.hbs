@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        {{>header}}
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home Page</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="signin">Sign in</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+    
+    <div class="container" style="text-align: center;">
+        <h1>Sign Up</h1>
+        <form action="/signup" method="POST">
+  <div class="form-group">
+    <label for="name" class="form-check-label">Name: </label>
+    <input type="text" name="name" class="form-control"><br><br>
+     <label for="email" class="form-check-label">Email: </label>
+    <input type="email" name="email" class="form-control"><br><br>
+    <label for="password" class="form-check-label">Password: </label>
+    <input type="password" name="password" class="form-control"><br><br>
+   </div>
+  <button type="submit" class="btn btn-primary" >Submit</button>
+</form>
+    </div>
+</body>
+</html>
